@@ -6,8 +6,6 @@
 
 # Guide Questions (Student Reflection & Explanation)
 
----
-
 # 1. Dataset Preparation
 
 ## How did you organize your dataset in Google Drive?
@@ -18,7 +16,6 @@ I organized the dataset inside a main folder called `ImageDataset`. Inside this 
 
 Folder structure is important because TensorFlow uses the folder names as the labels for the images when using `image_dataset_from_directory`. By organizing the dataset properly, TensorFlow can automatically classify images into their correct categories without manually assigning labels. It also makes the dataset cleaner, more organized, and easier to process during training.
 
----
 
 # 2. Model Training
 
@@ -35,7 +32,6 @@ The dataset is split into training and validation sets so the model can be evalu
 
 This is important because it helps determine whether the model is learning correctly or simply memorizing the training data.
 
----
 
 # 3. Performance Analysis
 
@@ -52,7 +48,7 @@ The training accuracy was very high, but the validation accuracy was much lower.
 
 The number of images greatly affected the model’s performance. Although having around 300 images per class was enough to start training, the dataset still needed more image variety. Since there were 20 classes, the model required more diverse images with different lighting conditions, angles, and backgrounds to improve its ability to generalize.
 
----
+
 
 # 4. Critical Thinking
 
@@ -64,7 +60,7 @@ One challenge I encountered was the inconsistency in image quality, lighting, an
 
 Data augmentation improves the model by creating modified versions of the existing images through random flips, rotations, zooms, and other transformations. This increases the diversity of the dataset and helps the model learn more generalized features instead of memorizing images. As a result, the model becomes more accurate on unseen data.
 
----
+
 
 # 5. Application
 
@@ -84,7 +80,6 @@ The system can be integrated into mobile and web applications in different ways:
 
 # Activity 3A Guide Questions (Student Explanation & Reflection)
 
----
 
 # 1. Visualization & Overfitting
 
@@ -96,7 +91,7 @@ The first model showed overfitting because the training accuracy became very hig
 
 Data augmentation helped improve the validation accuracy because it exposed the model to different variations of the images. By seeing flipped, rotated, and zoomed images during training, the model became more flexible and performed better on unseen data.
 
----
+
 
 # 2. Model Improvement
 
@@ -108,7 +103,7 @@ Dropout layers help reduce overfitting by randomly turning off some neurons duri
 
 Data augmentation improves generalization because it increases the variety of training images without needing additional data collection. The model learns to recognize objects even when images are changed slightly, making it more reliable in real-world situations.
 
----
+
 
 # 3. Performance Comparison
 
@@ -120,7 +115,7 @@ Before applying improvements, the model achieved high training accuracy but poor
 
 Data augmentation contributed the most because it increased the diversity of the training dataset. This helped the model learn more generalized patterns and improved its performance on validation images.
 
----
+
 
 # 4. Deployment & Application
 
